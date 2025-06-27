@@ -22,6 +22,7 @@ HKEY_CURRENT_USER\Control Panel\Colors
 HotTrackingColor
 
 ## Enable numpad at login
+HKEY_USERS\.DEFAULT\Control Panel\Keyboard
 InitialKeyboardIndicators 2
 
 ### Control Panel 
