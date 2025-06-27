@@ -7,6 +7,23 @@
 
 ## HKEY_CURRENT_USER
 
+Registry key to modify if you want to enable manual BSOD functionality:
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\kbdhid\Parameters
+
+### Legal Banner at Login
+Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon
+
+### Hightlight and Hilight Text Regedit
+Highlight 
+HighlightText
+
+## Desktop Lasso Selection Box Color
+HKEY_CURRENT_USER\Control Panel\Colors
+HotTrackingColor
+
+## Enable numpad at login
+InitialKeyboardIndicators 2
+
 ### Control Panel 
 
 #### Colors 
