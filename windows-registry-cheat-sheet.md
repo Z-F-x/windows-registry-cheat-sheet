@@ -45,6 +45,7 @@ These settings define the color settings for classic Windows UI elements. Each k
 | **Window**                 | Background color of window content areas. |
 | **WindowFrame**            | Border color of windows. |
 | **WindowText**             | Text color inside windows. |
+| **InitialKeyboardIndicators** | Enables numpad on startup |
 """
 
 ##### Change Selection Box Colors 
