@@ -25,6 +25,28 @@ HotTrackingColor
 HKEY_USERS\.DEFAULT\Control Panel\Keyboard
 InitialKeyboardIndicators 2
 
+## Increase the Node / Electron heap limit on Windows
+
+| Command                                                                                      | Lifespan            | Applies to           |
+|----------------------------------------------------------------------------------------------|---------------------|----------------------|
+| `setx NODE_OPTIONS "--max_old_space_size=8192"`                                              | **Persistent** (stored in registry) | All **new** sessions after you run it |
+| `set NODE_OPTIONS=--max_old_space_size=8192` (in **cmd.exe**)                                | Current shell only  | Lasts until you close that cmd window |
+| `$env:NODE_OPTIONS="--max_old_space_size=8192"` (in **PowerShell**)                          | Current shell only  | Lasts until you close that PowerShell tab |
+
+---
+
+### Remove the permanent variable later
+
+```powershell
+setx NODE_OPTIONS ""
+```
+blanks it out
+
+or
+```powershell
+reg delete "HKCU\Environment" /v NODE_OPTIONS /f
+```
+
 ### Control Panel 
 
 #### Colors 
