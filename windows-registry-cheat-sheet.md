@@ -92,3 +92,34 @@ These settings define the color settings for classic Windows UI elements. Each k
 - Navigate to `HKEY_CURRENT_USER\Control Panel\Colors`
 - Edit the `Hilight` key, it changes the color of the border of the lasso/selection box.
 - Edit the `HotTrackingColor`, it changes the color of the background of the lasso/selection box.
+
+### How to add "Open here with ..." entries to the context menu
+
+#### Example of open here with Cursor, VSCode Insiders etc.
+<img width="315" height="551" alt="image" src="https://github.com/user-attachments/assets/5a839df7-4411-4fea-b16c-b4351e07c80e" />
+
+Go to 
+```cmd
+Computer\HKEY_CLASSES_ROOT\Directory\background\shell\
+```
+
+Create a new key in `shell`
+<img width="685" height="943" alt="image" src="https://github.com/user-attachments/assets/c95eff29-df01-433b-ba91-99610924a16f" />
+
+Add new string to the key, call it `Icon`
+<img width="1028" height="889" alt="image" src="https://github.com/user-attachments/assets/9fd4ca26-cdb5-4321-8b4a-8727322e7fdb" />
+
+Find the path executable for the software you want to add, and wrap it in `""`-quotes
+<img width="739" height="969" alt="image" src="https://github.com/user-attachments/assets/336fa6a2-6fd0-4b8b-9b98-f5c371a8e8f0" />
+
+
+Add a subkey to the main key and call it `command`
+<img width="960" height="923" alt="image" src="https://github.com/user-attachments/assets/e69d0400-c632-42c5-88e9-cf57046e4fa1" />
+
+Add the same path to the executable and append `"%V"` to it
+<img width="619" height="730" alt="image" src="https://github.com/user-attachments/assets/4424039f-490d-4449-ba1d-24c484ecb641" />
+
+Your new custom key should show up in the context menu without need for reboot:
+<img width="314" height="580" alt="image" src="https://github.com/user-attachments/assets/b1c569b8-ee7c-4db2-8bab-53652bc064f4" />
+
+
