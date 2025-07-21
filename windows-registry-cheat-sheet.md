@@ -104,25 +104,25 @@ Go to
 Computer\HKEY_CLASSES_ROOT\Directory\background\shell\
 ```
 
-1. Create a new key in `shell`\
+1. Create a new key in `shell`
 <img src="https://github.com/user-attachments/assets/c95eff29-df01-433b-ba91-99610924a16f" style="max-width:300px; height:auto;" />
 
 
-2. Add new string to the key, call it `Icon`\
+2. Add new string to the key, call it `Icon`
 <img src="https://github.com/user-attachments/assets/9fd4ca26-cdb5-4321-8b4a-8727322e7fdb" style="max-width:300px; height:auto;" />
 
 
-3. Find the path executable for the software you want to add, and wrap it in `""`-quotes\
+3. Find the path executable for the software you want to add, and wrap it in `""`-quotes
 <img src="https://github.com/user-attachments/assets/336fa6a2-6fd0-4b8b-9b98-f5c371a8e8f0" style="max-width:300px; height:auto;" />
 
 
-4. Add a subkey to the main key and call it `command`\
+4. Add a subkey to the main key and call it `command`
 <img src="https://github.com/user-attachments/assets/e69d0400-c632-42c5-88e9-cf57046e4fa1" style="max-width:300px; height:auto;" />
 
 
-5. Add the same path to the executable and append `"%V"` to it\
+5. Add the same path to the executable and append `"%V"` to it
 <img src="https://github.com/user-attachments/assets/4424039f-490d-4449-ba1d-24c484ecb641" style="max-width:300px; height:auto;" />
 
 
-6. Your new custom key should show up in the context menu without need for reboot:\
+6. Your new custom key should show up in the context menu without need for reboot:
 <img src="https://github.com/user-attachments/assets/b1c569b8-ee7c-4db2-8bab-53652bc064f4" style="max-width:300px; height:auto;" />
